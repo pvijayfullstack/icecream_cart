@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cone for cup:</b>
+  <%= @ice_cream.cone_for_cup_id %>
+</p>
+
+<p>
+  <b>Flavor:</b>
+  <%= @ice_cream.flavor_id %>
+</p>
+
+<p>
+  <b>Extras:</b>
+  <%= @ice_cream.extras_id %>
+</p>
+
+<p>
+  <b>Total number:</b>
+  <%= @ice_cream.total_number %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @ice_cream.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_ice_cream_path(@ice_cream) %> |
+<%= link_to 'Back', ice_creams_path %>

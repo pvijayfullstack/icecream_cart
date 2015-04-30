@@ -1,0 +1,66 @@
+
+<h2>Bearcat Ice Cream</h2>
+
+
+
+<div class="row">
+      <div class="span9">
+
+      <%= form_for @ice_cream do |f| %>
+
+        <fieldset>
+          <legend>Cone or Cup:</legend>
+
+           <% ConeForCup.all.each_with_index do |clone, index| %>
+              <% if index == 0 %>
+               <input type="radio" name="cone_for_cup" checked="true"> <%= clone.name %><br>
+              <% else %>
+               <input type="radio" name="cone_for_cup" > <%= clone.name %><br>
+              <% end %>
+
+           <% end %>
+         </fieldset>
+
+        <br/>
+        <%= f.select :flavor_id, options_for_select(Flavor.all.collect {|f| [f.name, f.id] }), :prompt => 'Choose a flavor' %>
+
+
+
+        <fieldset>
+          <legend>Number:</legend>
+            <input type="radio" name="number" checked="true">One <br>
+            <input type="radio" name="number">Two <br>
+            <input type="radio" name="number">Three <br>
+
+         </fieldset>
+
+
+        <fieldset>
+          <legend>Extras</legend>
+
+           <% Extra.all.each_with_index do |clone, index| %>
+               <% if index == 0 %>
+                 <input type="checkbox" class="extra" checked="true"> <%= clone.name %><br>
+               <% else %>
+                  <input type="checkbox" class="extra"> <%= clone.name %><br>
+               <% end %>
+           <% end %>
+         </fieldset>
+
+        Your name: <input type="text" value="<%= current_user.login %>"> <br>
+
+       <%= f.submit 'Order' , :class => 'btn' %>
+
+     <% end %>
+
+      <% if @ice_cream.flavor.name.present? %>
+        Your <%= @ice_cream.flavor.name %> ice cream will be ready soon, <%= current_user.login %>
+        Your order cost is <% %>
+      <% end %>
+
+      </div>
+
+ </div>
+
+
+

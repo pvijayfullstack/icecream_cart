@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  appetizer_id: 1
+  line_item_id: 
+
+two:
+  user_id: 1
+  appetizer_id: 1
+  line_item_id: 

@@ -1,0 +1,4 @@
+<h1>Login</h1>
+<%= form_for @user_session, :as => :user_session, :url => { :action => "create" } do |f| %>
+<%= render :partial => "form", :object => f, :locals => { :user_session => @user_session } %>
+<% end %>

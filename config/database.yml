@@ -1,0 +1,16 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: icecream
+  pool: 5
+  username: root
+  password: root
+  host: localhost
+
+production:
+  adapter:  postgresql
+  encoding: utf8
+  database: recipe_todo_production
+  pool: 5
+  timeout: 500000

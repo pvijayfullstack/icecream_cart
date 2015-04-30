@@ -1,0 +1,12 @@
+
+  <%= render "shared/error_messages", :target => @user_session %>
+  <%= form.label :login %>
+  <%= form.text_field :login %>
+
+  <%= form.label :password %><br />
+  <%= form.password_field :password %>
+  <br/>
+  <%= form.check_box :remember_me %>
+  <%= form.label :remember_me %>
+
+  <%= form.submit "Login", :class => 'btn' %>

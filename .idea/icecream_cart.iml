@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="GemRequirementsHolder" version="3">
+    <requirement>
+      <requirement>
+        <dependency name="authlogic" version="3.4.1" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="bcrypt" version="3.1.7" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="coffee-rails" version="3.2.1" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jquery-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mysql2" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="pg" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails" version="3.2.17" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails_12factor" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sass-rails" version="3.2.3" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="scrypt" version="1.2.1" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="twitter-bootstrap-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="uglifier" version="1.0.3" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.17.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/pg-0.17.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.3.5, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/bundler-1.3.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt (v3.1.10, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/bcrypt-3.1.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v3.1.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/jquery-rails-3.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-rails (v3.2.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/coffee-rails-3.2.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.3.18, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/mysql2-0.3.18)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] uglifier (v2.7.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/uglifier-2.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass-rails (v3.2.6, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/sass-rails-3.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.2.13, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/actionpack-3.2.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.43, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/tzinfo-0.3.43)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rdoc (v3.12.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/rdoc-3.12.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] journey (v1.0.4, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/journey-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] minitest (v4.7.5, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/minitest-4.7.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.4.5, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/rack-1.4.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.6.1, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/i18n-0.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-cache (v1.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/rack-cache-1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.19.1, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/thor-0.19.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thread_safe (v0.3.4, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/thread_safe-0.3.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass (v3.4.12, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/sass-3.4.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] execjs (v2.3.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/execjs-2.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.4, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/builder-3.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.2.13, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/activesupport-3.2.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.6.3, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/rack-test-0.6.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v4.0.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/actionpack-4.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script (v2.3.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/coffee-script-2.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.5.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/rack-1.5.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.7.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/erubis-2.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-ssl (v1.3.4, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/rack-ssl-1.3.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tilt (v1.4.1, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/tilt-1.4.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v1.10.1, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/multi_json-1.10.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v4.0.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/activesupport-4.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script-source (v1.9.1, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/coffee-script-source-1.9.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v10.4.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/rake-10.4.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.2.3, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/sprockets-2.2.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v4.0.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/railties-4.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hike (v1.2.3, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/hike-1.2.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.2.13, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/railties-3.2.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.7.0, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/i18n-0.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.8.2, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/json-1.8.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.1.4, /home/vijay/.rvm/gems/ruby-1.9.3-p392@dealsfull/gems/builder-3.1.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.2.13, /home/vijay/.rvm/gems/ruby-1.9.3-p392@global/gems/activemodel-3.2.13)" level="application" />
+  </component>
+</module>
+

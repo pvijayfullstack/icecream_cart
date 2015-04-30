@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @extra.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @extra.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_extra_path(@extra) %> |
+<%= link_to 'Back', extras_path %>
