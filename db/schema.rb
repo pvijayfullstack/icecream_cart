@@ -37,9 +37,10 @@ ActiveRecord::Schema.define(:version => 20150430071049) do
   create_table "ice_creams", :force => true do |t|
     t.integer  "cone_for_cup_id"
     t.integer  "flavor_id"
-    t.integer  "extras_id"
+    t.string   "extra_ids"
     t.integer  "total_number"
     t.integer  "user_id"
+    t.string   "status"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

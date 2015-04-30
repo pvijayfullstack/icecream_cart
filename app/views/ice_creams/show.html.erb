@@ -1,30 +1,29 @@
-<p id="notice"><%= notice %></p>
+
+<h2>Preview or confirm order</h2>
+
+<h4>Order Details:</h4>
 
 <p>
   <b>Cone for cup:</b>
-  <%= @ice_cream.cone_for_cup_id %>
+  <%= @ice_cream.cone_for_cup.name rescue nil %> ------------------------ $<%= @ice_cream.cone_for_cup.price rescue nil %>
 </p>
 
 <p>
   <b>Flavor:</b>
-  <%= @ice_cream.flavor_id %>
+  <%= @ice_cream.flavor.name rescue nil %> ------------------------------------------ $<%= @ice_cream.flavor.price rescue nil %>
 </p>
 
 <p>
   <b>Extras:</b>
-  <%= @ice_cream.extras_id %>
+  <%= Extra.where("id IN(?)",  @ice_cream.extra_ids).collect(&:name).join(',')  %> -------------------------------------- $<%= Extra.where("id IN(?)",  @ice_cream.extra_ids).collect(&:price).sum %>
 </p>
 
 <p>
-  <b>Total number:</b>
+  <b>No of Scopes:</b>
   <%= @ice_cream.total_number %>
 </p>
 
-<p>
-  <b>User:</b>
-  <%= @ice_cream.user_id %>
-</p>
+<p><b>Total:</b> --------------------------------------------------------  $<%= @ice_cream.cone_for_cup.price +  Extra.where("id IN(?)",  @ice_cream.extra_ids).collect(&:price).sum + (@ice_cream.flavor.price * @ice_cream.total_number.to_i)   %></p>
 
+<%= link_to 'Place Order', confirm_ice_cream_path(@ice_cream), :class => 'btn' %>
 
-<%= link_to 'Edit', edit_ice_cream_path(@ice_cream) %> |
-<%= link_to 'Back', ice_creams_path %>

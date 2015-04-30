@@ -1,0 +1,6 @@
+
+  <% if @flavor.present? %>
+    <div style="font-size: 25px;"> Your <b><%= @flavor.name %></b> ice cream will be ready soon, <b> <%= current_user.login %> </b>
+     Your order cost is $<span style="color:green"><%= @cone_for_cup.price +  @extra.collect(&:price).sum + (@flavor.price * @number.to_i)  rescue 0 %></span>
+    </div>
+  <% end %>

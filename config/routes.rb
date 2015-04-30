@@ -31,7 +31,14 @@ RecipeTodo::Application.routes.draw do
    resources :ice_creams  do
      collection do
        post :selected_items
+       post :update_cal
+
      end
+
+     member do
+       get :confirm
+     end
+
    end
   
 end

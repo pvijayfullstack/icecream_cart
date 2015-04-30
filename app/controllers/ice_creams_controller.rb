@@ -40,7 +40,15 @@ class IceCreamsController < ApplicationController
   # POST /ice_creams
   # POST /ice_creams.json
   def create
+
     @ice_cream = IceCream.new(params[:ice_cream])
+    @extra = Extra.where("id IN(?)", params[:ice_cream][:extra_ids])
+    @ice_cream.extra_ids = @extra.collect(&:id).join(',')
+    @ice_cream.status = params[:ice_cream][:status]
+
+    @ice_cream.cone_for_cup_id = params[:ice_cream][:cone_for_cup]
+    @ice_cream.flavor_id = params[:ice_cream][:flavor]
+    @ice_cream.user_id = current_user.id
 
     respond_to do |format|
       if @ice_cream.save
@@ -80,4 +88,21 @@ class IceCreamsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def update_cal
+
+     @cone_for_cup = ConeForCup.find(params[:ice_cream][:cone_for_cup])
+     @flavor = Flavor.find(params[:ice_cream][:flavor])
+     @number = params[:ice_cream][:total_number]
+     @extra = Extra.where("id IN(?)", params[:ice_cream][:extra_ids])
+     render :partial => 'order_info'
+  end
+
+  def confirm
+      @ice_cream = IceCream.find(params[:id])
+      @ice_cream.status = "completed"
+      @ice_cream.save!
+  end
+
+
 end

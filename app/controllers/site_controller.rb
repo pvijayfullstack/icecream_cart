@@ -4,7 +4,9 @@ class SiteController < ApplicationController
 
   def index
      @cone_for_cups = ConeForCup.all
-     @ice_cream = IceCream.new
+      @ice_cream = IceCream.new
   end
+
+
 
 end

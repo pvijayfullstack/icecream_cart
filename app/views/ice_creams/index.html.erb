@@ -1,6 +1,6 @@
 <h1>Listing ice_creams</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Cone for cup</th>
     <th>Flavor</th>
@@ -14,11 +14,12 @@
 
 <% @ice_creams.each do |ice_cream| %>
   <tr>
-    <td><%= ice_cream.cone_for_cup_id %></td>
-    <td><%= ice_cream.flavor_id %></td>
-    <td><%= ice_cream.extras_id %></td>
+    <td><%= ice_cream.cone_for_cup.name %></td>
+    <td><%= ice_cream.flavor.name rescue nil %></td>
+    <td><%= Extra.where("id IN(?)",  ice_cream.extra_ids).collect(&:name).join(',') %></td>
     <td><%= ice_cream.total_number %></td>
-    <td><%= ice_cream.user_id %></td>
+    <td><%= ice_cream.user.login %></td>
+    <td><%= ice_cream.status %></td>
     <td><%= link_to 'Show', ice_cream %></td>
     <td><%= link_to 'Edit', edit_ice_cream_path(ice_cream) %></td>
     <td><%= link_to 'Destroy', ice_cream, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -28,4 +29,4 @@
 
 <br />
 
-<%= link_to 'New Ice cream', new_ice_cream_path %>
+<%= link_to 'New Ice cream', new_ice_cream_path, :class => 'btn' %>
